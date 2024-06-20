@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(244, 194, 194);
+    padding: 10px;
+    color: rgb(15, 15, 14);
+  
+}
+.todolist{
+    width: 100%;
+    max-width: 540px;
+    background: #e4c2c2;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    margin: 100px auto 20px;
+}
+.todolist h2{
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.todolist h2 img{
+    margin-left: 10px;
+    
+}
+.add{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.add input{
+    width: 85%;
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border: 1px solid #ddd;
+    background-color: rgb(242, 227, 227);
+    color: rgb(20, 19, 19);
+    font-size: large;
+    outline: none;
+    background: transparent;
+}
+button{
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border: 1px solid #ddd;
+    background-color: rgb(250, 137, 137);
+    color: rgb(20, 19, 19);
+    font-size: large;
+    width: 70px;
+    cursor: pointer; 
+    border-color: rgb(250, 137, 137);
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
