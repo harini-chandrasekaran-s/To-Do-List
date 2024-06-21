@@ -7,7 +7,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: rgb(244, 194, 194);
+    background:rgb(253, 198, 188);
     padding: 10px;
     color: rgb(15, 15, 14);
   
@@ -15,7 +15,7 @@
 .todolist{
     width: 100%;
     max-width: 540px;
-    background: #e4c2c2;
+    background: #ede8e8;
     padding: 40px 30px 70px;
     border-radius: 10px;
     margin: 100px auto 20px;
@@ -43,23 +43,23 @@
     border: none;
     border: 1px solid #ddd;
     background-color: rgb(242, 227, 227);
-    color: rgb(20, 19, 19);
+    color: rgb(47, 44, 44);
     font-size: large;
     outline: none;
     background: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
 }
 button{
     border-radius: 20px;
     padding: 10px;
     box-sizing: border-box;
     border: none;
-    border: 1px solid #ddd;
-    background-color: rgb(250, 137, 137);
-    color: rgb(20, 19, 19);
+    background-color: rgb(253, 90, 30);
+    color: white;
     font-size: large;
     width: 70px;
     cursor: pointer; 
-    border-color: rgb(250, 137, 137);
+    
 }
 ul li{
     list-style: none;
@@ -80,4 +80,26 @@ ul li::before{
     background-position: center;
     top: 12px;
     left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top:5px;
+    width: 40px;
+    height:40px ;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0
 }
